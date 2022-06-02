@@ -1,22 +1,40 @@
 Pseudo Code for Work Day Scheduler
 Task:
 Create a simple calendar application that allows a user to save events for each hour of the day.
-1. Planner opened (this is main page with hearder)
+
+How it functions:
+1. Planner opened (this is main page with header)
 2. Current Day Displayed at Top of Calendar
+    $("#currentDay") //grabbing the id
+    $("#currentDay").text(Here put value for current day)
+    *Use Moment Library to get Day, Month, Date
+    Method- format
+
 3. Time Blocks for standard business hours
-    -Add Time blocks to html
-4. Color Code time blocks to indicate past, present, future
+    -Add Time blocks in html
+
+4. Color Code time blocks to indicate past, present, future with three different colors
+
 5. Click on time block
-    -enter an event in the time block
+    -Add event listener "click" to each block *Can this be done with one function?
+    -Enter an event in the time block
+
 6. Click save button for each time block   
-    -create save button 
-    -save in localStorage
+    -Create save button /lock or other icon on side
+    -Save in localStorage
+
 7. Create localStorage 
-8. Events persist when page is refreshed
 
+8. Events persist when page is refreshed (see taskinator for help with this)
 
+*Writing what you will do at each step
+Example: for loop will start (var i) . . . 
+- what types of loops, functions, parameters, returns, etc.
+Bootstrap documentation- layouts, grid for time blocks
 
+Rows for time blocks and columns: time/event/save button (CSS)
 
+Bootstrap (3 links at top of HTML- fontawesome- save icon)
 /*
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
