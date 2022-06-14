@@ -21,6 +21,7 @@ How it functions:
 
 6. Click save button for each time block   
     -Create save button /lock or other icon on side
+    https://useiconic.com/open span in html
     -Save in localStorage
 
 7. Create localStorage 
