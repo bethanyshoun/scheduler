@@ -7,7 +7,7 @@ $("#currentDay").text(myDate);
 $(document).ready(function () {
   // event listener for Save Button
   $(".saveBtn").on("click", function () {
-    var text = $(this).siblings(".task").val();
+    var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
     localStorage.setItem(time, text);
@@ -42,15 +42,15 @@ $(document).ready(function () {
     checkTime();
   })
   // Retrieve data from local storage if applicable
-$("#9am .task").val(localStorage.getItem("9am"));
-$("#10am .task").val(localStorage.getItem("10am"));
-$("#11am .task").val(localStorage.getItem("11am"));
-$("#12pm .task").val(localStorage.getItem("12pm"));
-$("#1pm .task").val(localStorage.getItem("1pm"));
-$("#2pm .task").val(localStorage.getItem("2pm"));
-$("#3pm .task").val(localStorage.getItem("3pm"));
-$("#4pm .task").val(localStorage.getItem("4pm"));
-$("#5pm .task").val(localStorage.getItem("5pm"));
+$("#9am .description").val(localStorage.getItem("9am"));
+$("#10am .description").val(localStorage.getItem("10am"));
+$("#11am .description").val(localStorage.getItem("11am"));
+$("#12pm .description").val(localStorage.getItem("12pm"));
+$("#1pm .description").val(localStorage.getItem("1pm"));
+$("#2pm .description").val(localStorage.getItem("2pm"));
+$("#3pm .description").val(localStorage.getItem("3pm"));
+$("#4pm .description").val(localStorage.getItem("4pm"));
+$("#5pm .description").val(localStorage.getItem("5pm"));
 
 
 })
